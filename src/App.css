@@ -1,0 +1,408 @@
+/* navbar css */
+#navbar {
+  background: rgba(92, 150, 236, 0.842);
+}
+
+.nav__top {
+  display: flex;
+  align-items: center;
+}
+
+.nav__top h4 {
+  position: relative;
+  left: 24vh;
+}
+
+.nav__top span {
+  position: relative;
+  margin-left: auto;
+  right: 15vh;
+}
+
+.nav__top button {
+  padding: 4px 10px 4px 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.stays__btn button {
+  background: transparent;
+  color: white;
+  border-radius: 18px;
+  padding: 6px 20px 6px 20px;
+  border: 1px solid whitesmoke;
+  position: relative;
+  left: 44vh;
+  margin-bottom: 14px;
+  margin-top: 4px;
+}
+
+.nav__bottom {
+  position: relative;
+  left: 20vh;
+  margin-bottom: 8px;
+}
+
+/* end of navbar */
+
+
+/* filter search home */
+.wrapper {
+  text-align: center;
+  padding: 4px;
+}
+
+.search-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.wrapper .search-container input,
+button {
+  padding: 6px;
+  margin: 2px 3px 2px 3px;
+  height: 35px;
+}
+
+#search__btn {
+  margin-left: 12px;
+}
+
+/* end of filter search */
+
+
+/* featured countries */
+.featuredCountries__container {
+  margin-top: 40px;
+}
+
+
+/* end of featured countries */
+
+/* guestlove featured */
+.guestlove__container {
+  margin-top: 18vh;
+  line-height: 0.9;
+}
+
+.guestlove_list {
+  width: 18rem !important;
+  border: none !important;
+}
+
+.card-text:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-body {
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* end of guestlove featured */
+
+
+/* room select dropdown */
+.roomSelection__dropdown {
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+  width: 290px;
+  text-align: left;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 37.5vh;
+  background: aliceblue;
+  height: auto;
+}
+
+.roomSelection__dropdown ul {
+  list-style: none;
+  padding: 12px 0 0px 0px;
+  margin: 0;
+}
+
+.roomSelection__dropdown li {
+  padding: 7px 14px;
+}
+
+.roomSelection__dropdown li span {
+  position: absolute;
+  left: 22vh;
+}
+
+#reset__btn {
+  position: relative;
+  float: right;
+  margin: 4px 0px 8px 0;
+  background: plum;
+  border: none;
+  cursor: pointer;
+}
+
+.roomSelection__dropdown li span button {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* end room select dropdown */
+
+.footer {
+  padding: 40px 0;
+  background-color: #b0d7e9d8;
+  margin-top: 20vh;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+#social__icon {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul a:hover {
+  opacity: 1;
+}
+
+.footer .developer__info {
+  text-align: right;
+  position: relative;
+  right: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: rgb(83, 81, 81);
+}
+
+/* login form */
+.login__form {
+  position: relative;
+  left: 55vh;
+}
+
+.login__img {
+  position: relative;
+  left: 20vh;
+  border-radius: 14px;
+  padding: 8px
+}
+
+#login__div {
+  margin-top: 40px !important;
+  border: 0.5px dashed dotted !important;
+}
+
+#userRegitser__div {
+  margin-top: 30px !important;
+  border: 1px dashed darkgray !important;
+}
+
+#login__title {
+  color: rgba(40, 40, 43, 0.842);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  width: auto;
+  position: relative;
+  bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__opt{
+  margin-bottom: 20px;
+}
+.login__opt a{
+  text-decoration: none;
+  background: rgb(153, 152, 152);
+  padding: 6px 16px 6px 16px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+.login__opt a:hover{
+  color: whitesmoke;
+}
+
+.login__btn {
+  background: rgba(92, 150, 236, 0.842) !important;
+  color: whitesmoke !important;
+}
+
+.login__btn:hover {
+  background: rgba(22, 84, 177, 0.842) !important;
+}
+
+/* end of login form */
+
+/* userRegistration */
+.userRegistration__img {
+  width: 62% !important;
+  position: relative;
+  left: 20vh;
+  height: 65vh;
+}
+
+.userRegitser__btn {
+  background: rgba(92, 150, 236, 0.842) !important;
+  color: whitesmoke !important;
+}
+
+.userRegitser__btn:hover {
+  background: rgba(22, 84, 177, 0.842) !important;
+
+}
+
+/* end of userRegistration */
+
+
+/* ownerRegistration */
+.ownerRegistrationTitle {
+  margin: 8px 0 20px 0;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: underline;
+}
+
+.stepwizard-step p {
+  margin-top: 10px;
+}
+
+.stepwizard-row {
+  display: table-row;
+}
+
+.stepwizard {
+  display: table;
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stepwizard-step button[disabled] {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+  top: 14px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.stepwizard-step {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+  width: 50vh;
+}
+
+.circle_btn {
+  background: rgb(70, 167, 70);
+  color: whitesmoke;
+  width: 30px;
+  height: 30px;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.ownerRegitser__btn {
+  margin-top: 25px;
+  background: rgba(92, 150, 236, 0.842) !important;
+  color: whitesmoke !important;
+  width: auto !important;
+}
+
+.ownerRegitser__btn:hover {
+  background: rgba(22, 84, 177, 0.842) !important;
+}
+
+.reset_pswbtn_1 {
+  background: rgba(92, 150, 236, 0.842) !important;
+  color: whitesmoke !important;
+
+}
+
+/* end of ownerRegistration */
+
+.rst_psswrd{
+  font-weight: 500;
+  text-align: center;
+  color: rgba(41, 114, 41, 0.959);
+  margin-top: 50px !important;
+}
+
+/* user home */
+
+.profile_dropdown{
+  display: inline
+}
+.profile_dropdown div{
+  display: grid;
+  background: rgb(230, 230, 230);
+  width: 140px;
+  border-radius: 2px;
+  padding: 1px 2px 1px 2px;
+  position: absolute;
+  right: 0;
+}
+.profile_dropdown div a{
+  padding: 6px 0px 6px 0px;
+  text-decoration: none !important;
+  color: rgb(19, 18, 18);
+}
+.profile_dropdown div a:hover{
+  background: rgba(121, 170, 245, 0.842) !important;
+  transition: .2s;
+}
