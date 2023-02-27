@@ -3,6 +3,8 @@ import Navbar from "../../layout/Navbar";
 import axios from 'axios'
 import Notification from "../../common/Notification";
 import Loader from "../../common/Loader";
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 const UserRegistration = () => {
 
@@ -15,13 +17,12 @@ const UserRegistration = () => {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
 
-
     const [loader, setLoader] = useState(false);
     const [showData, setShowData] = useState(true);
 
     const [showNotification, setShowNotification] = useState(false);
     const [notificationContent, setNotificationContent] = useState("");
-   
+
     const handleUserRegistration = async (e) => {
         e.preventDefault();
         if (!firstName && !lastName && !email && !city && !country && !contact && !password && !confirmPassword) {
@@ -89,8 +90,8 @@ const UserRegistration = () => {
             {
                 loader && <Loader />
             }
-            <Notification showNotification={showNotification} setShowNotification={setShowNotification} notificationContent={notificationContent}/>
-            
+            <Notification showNotification={showNotification} setShowNotification={setShowNotification} notificationContent={notificationContent} />
+
             {
                 showData && <section className="text-center text-lg-start">
                     {/* Jumbotron */}
@@ -134,17 +135,20 @@ const UserRegistration = () => {
                                             </div>
 
                                             <div className="form-outline mb-4">
-                                                <input type="number" id="form3Example6" className="form-control" placeholder="Contact" onChange={(e) => setContact(e.target.value)} />
+                                                <PhoneInput
+                                                    country={'in'}
+                                                    onChange={(e) => setContact(e)}
+                />
                                             </div>
                                             <div className="row">
                                                 <div className="col-md-6 mb-4">
                                                     <div className="form-outline">
-                                                        <input type="password" id="form3Example7" className="form-control" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+                                                        <input type="password" id="form3Example7" className="form-control" autoComplete="" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6 mb-4">
                                                     <div className="form-outline">
-                                                        <input type="password" id="form3Example8" className="form-control" placeholder="Confirm Passowrd" onChange={(e) => setConfirmPassword(e.target.value)} />
+                                                        <input type="password" id="form3Example8" className="form-control" autoComplete="" placeholder="Confirm Passowrd" onChange={(e) => setConfirmPassword(e.target.value)} />
                                                     </div>
                                                 </div>
                                             </div>
@@ -152,7 +156,7 @@ const UserRegistration = () => {
 
 
                                             {/* Submit button */}
-                                            <button type="submit" className="btn w-25 btn-block mb-4 userRegitser__btn">
+                                            <button type="submit" className="btn w-25 btn-block mb-4 theme__btn">
                                                 Sign up
                                             </button>
 

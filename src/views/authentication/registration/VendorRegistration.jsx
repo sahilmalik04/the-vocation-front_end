@@ -190,11 +190,11 @@ const VendorRegistration = () => {
                                         </div>
                                         <div className="form-group">
                                             <label className="control-label">Password</label>
-                                            <input type="password" required="required" className="form-control" onChange={(e) => setPassword(e.target.value)} value={password ? password : ""} />
+                                            <input type="password" required="required" autoComplete='' className="form-control" onChange={(e) => setPassword(e.target.value)} value={password ? password : ""} />
                                         </div>
                                         <div className="form-group">
                                             <label className="control-label">Confirm Password</label>
-                                            <input type="password" required="required" className="form-control" onChange={(e) => setConfirmPassword(e.target.value)} value={confirmPassword ? confirmPassword : ""} />
+                                            <input type="password" required="required" autoComplete='' className="form-control" onChange={(e) => setConfirmPassword(e.target.value)} value={confirmPassword ? confirmPassword : ""} />
                                         </div>
 
 

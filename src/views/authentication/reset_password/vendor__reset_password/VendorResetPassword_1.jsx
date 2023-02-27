@@ -69,7 +69,7 @@ const VendorResetPassword1 = () => {
                                 />
                             </div>
                             <div>
-                                <button className="btn w-50 reset_pswbtn_1"
+                                <button className="btn w-50 theme__btn"
                                 >Reset password</button>
                             </div>
 

@@ -1,3 +1,13 @@
+/* common */
+.theme__btn {
+  background: rgba(92, 150, 236, 0.842) !important;
+  color: whitesmoke !important;
+}
+
+.theme__btn:hover {
+  background: rgba(22, 84, 177, 0.842) !important;
+}
+
 /* navbar css */
 #navbar {
   background: rgba(92, 150, 236, 0.842);
@@ -266,16 +276,6 @@ button {
 .login__opt a:hover{
   color: whitesmoke;
 }
-
-.login__btn {
-  background: rgba(92, 150, 236, 0.842) !important;
-  color: whitesmoke !important;
-}
-
-.login__btn:hover {
-  background: rgba(22, 84, 177, 0.842) !important;
-}
-
 /* end of login form */
 
 /* userRegistration */
@@ -285,17 +285,6 @@ button {
   left: 20vh;
   height: 65vh;
 }
-
-.userRegitser__btn {
-  background: rgba(92, 150, 236, 0.842) !important;
-  color: whitesmoke !important;
-}
-
-.userRegitser__btn:hover {
-  background: rgba(22, 84, 177, 0.842) !important;
-
-}
-
 /* end of userRegistration */
 
 
@@ -365,12 +354,6 @@ button {
 
 .ownerRegitser__btn:hover {
   background: rgba(22, 84, 177, 0.842) !important;
-}
-
-.reset_pswbtn_1 {
-  background: rgba(92, 150, 236, 0.842) !important;
-  color: whitesmoke !important;
-
 }
 
 /* end of ownerRegistration */

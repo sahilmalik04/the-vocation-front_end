@@ -148,7 +148,7 @@ const Login = () => {
                                             {/* Password input  */}
                                             <div className="form-outline mb-4">
                                                 <label className="form-label" htmlFor="psw">Password</label>
-                                                <input type="password" id="psw" className="form-control" onChange={(e) => setUserPassword(e.target.value)} value={userPassword} />
+                                                <input type="password" id="psw" autoComplete="" className="form-control" onChange={(e) => setUserPassword(e.target.value)} value={userPassword} />
                                             </div>
 
                                             {/* 2 column grid layout for inline styling */}
@@ -168,7 +168,7 @@ const Login = () => {
                                             </div>
 
                                             {/* Submit button */}
-                                            <button className="btn bn-block mb-4 w-100 login__btn" >Sign in</button>
+                                            <button className="btn bn-block mb-4 w-100 theme__btn" >Sign in</button>
 
                                         </div>
 
@@ -213,7 +213,7 @@ const Login = () => {
                                             </div>
 
                                             {/* Submit button */}
-                                            <button className="btn bn-block mb-4 w-100 login__btn" >Sign in</button>
+                                            <button className="btn bn-block mb-4 w-100 theme__btn" >Sign in</button>
 
                                         </div>
 

@@ -78,11 +78,11 @@ const VendorResetPassword3 = () => {
                     <form onSubmit={(e) => handleSetNewPassword(e)} >
                         <div className="form-outline mb-4">
                             <label className="form-label" htmlFor="new_password">New Password</label>
-                            <input type="password" id="new_password" className="form-control my-1" onChange={(e) => setNewPassword(e.target.value)} />
+                            <input type="password" id="new_password" autoComplete='' className="form-control my-1" onChange={(e) => setNewPassword(e.target.value)} />
                         </div>
                         <div className="form-outline mb-4">
                             <label className="form-label" htmlFor="typeEmail">Confirm New Password</label>
-                            <input type="password" id="confNew" className="form-control my-1" onChange={(e) => setConfNewPassword(e.target.value)} />
+                            <input type="password" id="confNew" autoComplete='' className="form-control my-1" onChange={(e) => setConfNewPassword(e.target.value)} />
                         </div>
                         <button className="btn w-100" style={{ background: "rgba(92, 150, 236, 0.842)", color: "whitesmoke" }}>Reset password</button>
                     </form>
