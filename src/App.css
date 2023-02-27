@@ -233,12 +233,11 @@ button {
 
 #login__div {
   margin-top: 40px !important;
-  border: 0.5px dashed dotted !important;
+  
 }
 
 #userRegitser__div {
   margin-top: 30px !important;
-  border: 1px dashed darkgray !important;
 }
 
 #login__title {
@@ -405,4 +404,14 @@ button {
 .profile_dropdown div a:hover{
   background: rgba(121, 170, 245, 0.842) !important;
   transition: .2s;
+}
+
+/* loader */
+.loader{
+  text-align: center;
+  font-size: 16px;
+}
+.loader img{
+  height: 280px;
+  width: 310px;
 }
