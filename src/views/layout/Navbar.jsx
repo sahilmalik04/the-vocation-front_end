@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import {  useLocation, useNavigate } from "react-router-dom";
 import { CgProfile } from 'react-icons/cg'
+import "../../App.css"
+import { DropdownToggle, DropdownMenu, DropdownItem, Nav, NavItem, NavLink, Dropdown } from 'reactstrap';
+
 
 const Navbar = () => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
+    const toggle = () => setDropdownOpen(!dropdownOpen);
 
     const [isUserRegisterationPath, setIsUserRegisterationPath] = useState(false);
     const [isVendorRegistrationPath, setIsVendorRegistrationPath] = useState(false);
@@ -10,8 +16,6 @@ const Navbar = () => {
     const [vendorResetPasswordPath, setVendorResetPasswordPath] = useState(false);
 
     const [userHomePath, setUserHomePath] = useState(false);
-
-    const [dropDown, setDropDrown] = useState(false);
 
     const checkLoc = useLocation();
     const navigate = useNavigate();
@@ -34,7 +38,7 @@ const Navbar = () => {
         }
     }, [checkLoc.pathname])
 
-    const handleLogout = (e) =>{
+    const handleLogout = (e) => {
         e.preventDefault();
         sessionStorage.clear();
         navigate('/');
@@ -70,24 +74,46 @@ const Navbar = () => {
                     userHomePath && (
 
                         <span>
-                            <button className="btn btn-light"> About </button>
-                            <button className="btn btn-light"> Services </button>
-                            <button className="btn btn-light"> Contact Us </button>
-                            {/* <button type="button" className="btn btn-light">Logout</button> */}
+                            <Nav
+                            >
+                                <NavItem>
+                                    <NavLink
+                                        href="#"
+                                        className="navLink"
+                                    >
+                                        About
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#"
+                                        className="navLink"
 
-                            <div className="profile_dropdown">
-                                <button className="btn btn-light" onClick={() => setDropDrown(!dropDown)}><CgProfile /> </button>
-                                {
-                                    dropDown ?
-                                        <div>
-                                            <Link> {UserName} </Link>
-                                            <Link onClick={(e) => handleLogout(e)}> Logout </Link>
-                                        </div> : ""
-                                }
+                                    >
+                                        Services
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#"
+                                        className="navLink"
 
-                            </div>
-                            {/* <div> sadad </div> */}
+                                    >
+                                        Contact Us
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
 
+                                        <DropdownToggle nav caret className="navLink">
+                                            <CgProfile />
+                                        </DropdownToggle>
+                                        <DropdownMenu>
+                                            <DropdownItem >{UserName}</DropdownItem>
+                                            <DropdownItem divider />
+                                            <DropdownItem onClick={handleLogout}>Logout</DropdownItem>
+                                        </DropdownMenu>
+                                    </Dropdown>
+                                </NavItem>
+                            </Nav>
                         </span>
 
                     )
